@@ -17,10 +17,10 @@ To use the model in your Python project, make sure to install **coremltools** pa
 ```python
 import coremltools
 
-model = coremltools.models.MLModel('czech-sentiment-analysis.mlmodel')  # Load the model
+model = coremltools.models.MLModel('czech-sentiment-analysis.mlmodel')
 
-result = model.predict({"text": "Ahoj světě!"})  # Contains all CoreML annotations
-result_label = result["label"].  # Contains the result label
+result = model.predict({"text": "Ahoj světě!"}) 
+result_label = result["label"].
 ```
 
 ### Usage in Swift
@@ -31,8 +31,8 @@ If you want to use the model in your Swift app, simply drag the model file into 
 import NaturalLanguage
 import CoreML
 
-let mlModel = try czech_sentiment_analysis(configuration: MLModelConfiguration()).model  // Load the model
+let mlModel = try czech_sentiment_analysis(configuration: MLModelConfiguration()).model
         
-let sentimentPredictor = try NLModel(mlModel: mlModel)  // Create a NaturalLanguage model on top
-sentimentPredictor.predictedLabel(for: "Ahoj světě!")  // Fetch the prediction
+let sentimentPredictor = try NLModel(mlModel: mlModel)
+sentimentPredictor.predictedLabel(for: "Ahoj světě!")
 ```
