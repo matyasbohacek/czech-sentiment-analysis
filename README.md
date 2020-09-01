@@ -4,9 +4,11 @@ Machine learning model trained for semantic analysis on the Czech language. The 
 
 It is also very lightweight and can be used for multiple use-cases.
 
-# Metrics
+## Metrics
 
 // To be done.
+
+## Implementation
 
 ### Usage in Python
 
@@ -29,8 +31,8 @@ If you want to use the model in your Swift app, simply drag the model file into 
 import NaturalLanguage
 import CoreML
 
-let mlModel = try czech_sentiment_analysis(configuration: MLModelConfiguration()).model
+let mlModel = try czech_sentiment_analysis(configuration: MLModelConfiguration()).model  // Load the model
         
-let sentimentPredictor = try NLModel(mlModel: mlModel)
-sentimentPredictor.predictedLabel(for: "Ahoj světě!")
+let sentimentPredictor = try NLModel(mlModel: mlModel)  // Create a NaturalLanguage model on top
+sentimentPredictor.predictedLabel(for: "Ahoj světě!")  // Fetch the prediction
 ```
