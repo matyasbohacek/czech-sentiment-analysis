@@ -1,2 +1,3 @@
-# czech-semantic-analysis
+# Czech semantic analysis
+
 Machine learning model trained for semantic analysis on the Czech language
