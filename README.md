@@ -27,7 +27,7 @@ result_label = result["label"].
 
 If you want to use the model in your Swift app, simply drag the model file into your project in **Xcode**. A wrapping class will be generated automatically, on top of which you will be able to use the model. It is as simple as:
 
-```python
+```Swift
 import NaturalLanguage
 import CoreML
 
